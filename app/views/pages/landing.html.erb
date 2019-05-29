@@ -1,0 +1,19 @@
+<h1>Landing</h1>
+
+<%@students.each do |student|%>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="table-dark">
+      <td><%= student.name %></td>
+      <td><%= student.email %></td>
+    </tr>
+    </tbody>  
+</table> 
+<%end%>
+
